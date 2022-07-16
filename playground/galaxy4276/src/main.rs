@@ -1,17 +1,18 @@
+// [3,2,4]
 fn main() {
-    let mut s: String = String::from("World is Beautiful.");
-    let result: usize = first_word(&s);
-    println!("{}", result);
+    let vec = vec![0, 2, 4, 6];
+
+    two_sum(vec, 6);
 }
 
-fn first_word(s: &String) -> usize {
-    let bytes = s.as_byte();
-
-    for (i, &item) in bytes.iter().enumerate() {
-        if item == b' ' {
-            return i;
+fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+    for i in 0..nums.len() {
+        for j in i + 1..nums.len() {
+            if nums[i] + nums[j] == target {
+                return vec![i as i32, j as i32];
+            }
         }
     }
 
-    s.len()
+    unreachable!();
 }
