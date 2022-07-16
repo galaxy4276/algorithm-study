@@ -1,0 +1,4 @@
+# rust ignore
+*.exe
+*.pdb
+target
