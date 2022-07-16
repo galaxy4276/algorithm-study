@@ -8,11 +8,22 @@
    * 리스트 자료형은 리터럴 표현식으로 반환가능합니다.
       - return answer -> return [i, j]
 """
-
+# 은기의 솔루션
 class Solution(object):
     def twoSum(self, nums, target):
       for i in range (len(nums)):
           for j in range(i + 1,len(nums)):
             if(nums[i] + nums[j] == target):
                return [i, j]
+# 나의 솔루션      
+# class Solution(object):
+#     def twoSum(self, nums, target):
+#       answer = []
+#       for i in range (len(nums)):
+#           for j in range(len(nums)):
+#              if(i != j):
+#                 if(nums[i] + nums[j] == target):
+#                    answer.append(i)
+#                    answer.append(j)
+#                    return answer
       
