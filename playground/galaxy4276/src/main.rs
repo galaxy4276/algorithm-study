@@ -1,32 +1,27 @@
 fn main() {
-    let s = String::from("MCMXCIV");
-    let mut result_number = 0;
-    let mut last = 0;
-    for c in s.chars() {
-        let romanic_to_int = get_value(c);
-
-        if last != 0 && last >= romanic_to_int {
-            // println!("number: {}", romanic_to_int);
-            result_number += romanic_to_int;
-        } else {
-            let calculated = romanic_to_int - last - last;
-            // println!("calculated: {}", calculated);
-            result_number += calculated;
-        }
-        last = romanic_to_int;
-    }
-    println!("result is {}", result_number);
+    let strs = vec!["dog".to_string(), "racecar".to_string(), "car".to_string()];
+    let strs2 = vec!["cir".to_string(), "car".to_string()];
+    let res: String = longest_common_prefix(strs2);
+    println!("res: {}", res);
 }
 
-fn get_value(c: char) -> i32 {
-    match c {
-        'I' => 1,
-        'V' => 5,
-        'X' => 10,
-        'L' => 50,
-        'C' => 100,
-        'D' => 500,
-        'M' => 1000,
-        _ => 0,
+fn longest_common_prefix(strs: Vec<String>) -> String {
+    let mut first: String = strs[0].to_string();
+
+    for i in 1..strs.len() {
+        let mut calc_s = "".to_string();
+        let mut switch = true;
+        for (j, s) in strs[i].chars().enumerate() {
+            let last_bytes = *&first.as_bytes();
+            if switch && j < last_bytes.len() && last_bytes[j] as char == s {
+                calc_s.push(s);
+            } else {
+                switch = false;
+            }
+        }
+        if calc_s.len() == 0 { return "".to_string() }
+        first = calc_s;
     }
+
+    first
 }
