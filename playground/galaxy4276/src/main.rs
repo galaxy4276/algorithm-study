@@ -1,18 +1,32 @@
-// [3,2,4]
 fn main() {
-    let b: bool = is_palindrome(-121);
+    let s = String::from("MCMXCIV");
+    let mut result_number = 0;
+    let mut last = 0;
+    for c in s.chars() {
+        let romanic_to_int = get_value(c);
+
+        if last != 0 && last >= romanic_to_int {
+            // println!("number: {}", romanic_to_int);
+            result_number += romanic_to_int;
+        } else {
+            let calculated = romanic_to_int - last - last;
+            // println!("calculated: {}", calculated);
+            result_number += calculated;
+        }
+        last = romanic_to_int;
+    }
+    println!("result is {}", result_number);
 }
 
-fn is_palindrome(x: i32) -> bool {
-    if x < 0 {
-        return false;
+fn get_value(c: char) -> i32 {
+    match c {
+        'I' => 1,
+        'V' => 5,
+        'X' => 10,
+        'L' => 50,
+        'C' => 100,
+        'D' => 500,
+        'M' => 1000,
+        _ => 0,
     }
-    let chars: Vec<char> = x.to_string().chars().collect();
-    let reversed_chars: Vec<char> = x.to_string().chars().rev().collect();
-    for idx in 0..chars.len() {
-        if chars[idx] != reversed_chars[idx] {
-            return false;
-        }
-    }
-    true
 }
