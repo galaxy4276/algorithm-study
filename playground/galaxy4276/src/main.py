@@ -1,4 +1,3 @@
-def strStr(haystack: str, needle: str) -> int:
-  if needle not in haystack
-    return -1
-  return haystack.find(needle)
+def lengthOfLastWord(s: str) -> int:
+  l = str.split()
+  return len(l[len(l) - 1])

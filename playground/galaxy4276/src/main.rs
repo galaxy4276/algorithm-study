@@ -1,14 +1,36 @@
 fn main() {
-  let haystack = "hello".to_string();
-  let needle = "ll".to_string();
-
-  let result = str_str(haystack, needle);
-  println!("result: {}", result);
+  let nums = vec![1, 3, 5, 6];
+  search_insert(nums, 5);
 }
 
-fn str_str(haystack: String, needle: String) -> i32 {
-  match haystack.find(&needle) {
-    Some(n) => n as i32,
-    None => -1,
+fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
+  for i in 0..nums.len() {
+    if nums[i] == target {
+      return i as i32;
+    }
   }
+
+  for i in 0..nums.len() {
+    if nums[i] > target {
+      return i as i32;
+    }
+  }
+
+  return nums.len() as i32;
 }
+
+// fn main() {
+//   let mut input = vec![3, 2, 2, 3];
+//   let result = remove_element(&mut input, 3);
+//   println!("result: {:?}", result);
+// }
+
+
+// fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
+//   for i in 0..nums.len() {
+//     if nums[i] == val {
+//       nums.remove(nums[i] as usize);
+//     }
+//   }
+//   return 2;
+// }
