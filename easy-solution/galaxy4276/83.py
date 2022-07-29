@@ -3,7 +3,7 @@ class ListNode:
     self.val = val
     self.next = next
 
-
+# TODO: Refactoring
 class Solution:
   def deleteDuplicates(self, head):
     dulList = []
