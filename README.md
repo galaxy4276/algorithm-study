@@ -15,7 +15,7 @@
 * leetcode 75 도전하기 ( [leetcode75](https://leetcode.com/study-plan/leetcode-75/) )
 
 * galaxy4276
-  - Rust Lang skill up
+  - Rust Lang, Python Lang skill up
   - ready to code test
   - learning cs (computer science)
 * minesp3164
