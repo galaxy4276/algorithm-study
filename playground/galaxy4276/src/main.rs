@@ -1,36 +1,31 @@
 fn main() {
-  let nums = vec![1, 3, 5, 6];
-  search_insert(nums, 5);
+  let result = add_binary("1010".to_string(), "1011".to_string());
+  println!("result: {}", result);
 }
 
-fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
-  for i in 0..nums.len() {
-    if nums[i] == target {
-      return i as i32;
+fn add_binary(a: String, b: String) -> String {
+  let rev_a = a.chars().into_iter().rev().collect::<String>();
+
+  let mut result = String::new();
+  let mut is_up: bool = false;
+  for b in a.chars().into_iter().rev() {
+    
+    // for b in b.chars().into_iter().rev() {
+    //   if is_up && (a == '1' || b == '1') {
+    //     result.push('1');
+    //   } else if a == '0' && b == '0' {
+    //     result.push('1');
+    //     is_up = false;
+    //   } else if a == '1' && b == '1' {
+    //     is_up = true;
+    //     result.push('0');
+    //   }
     }
   }
 
-  for i in 0..nums.len() {
-    if nums[i] > target {
-      return i as i32;
-    }
+  if is_up {
+    result.push('1');
   }
 
-  return nums.len() as i32;
+  return result.chars().into_iter().rev().collect::<String>();
 }
-
-// fn main() {
-//   let mut input = vec![3, 2, 2, 3];
-//   let result = remove_element(&mut input, 3);
-//   println!("result: {:?}", result);
-// }
-
-
-// fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
-//   for i in 0..nums.len() {
-//     if nums[i] == val {
-//       nums.remove(nums[i] as usize);
-//     }
-//   }
-//   return 2;
-// }
