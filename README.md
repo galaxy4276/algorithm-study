@@ -21,6 +21,7 @@
 * minesp3164
   - Java, Python skill up
   - learning cs (computer science)
+  - ready to code test
 
 ## How to proceed?
 
