@@ -21,6 +21,8 @@
 * minesp3164
   - Java, Python skill up
   - learning cs (computer science)
+  - ready to code test
+  - 나 살아났어 비오
 
 ## How to proceed?
 
