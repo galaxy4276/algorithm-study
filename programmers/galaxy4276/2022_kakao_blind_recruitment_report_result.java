@@ -51,8 +51,7 @@ class Solution {
         Integer processedCount = reportMap.get(id_list[i]);
         answer[answerHead++] = processedCount;
       } else {
-        answer[answerHead] = 0;
-        if (answerHead < id_list.length) answerHead++;
+        answer[answerHead++] = 0;
       }
     }
 
