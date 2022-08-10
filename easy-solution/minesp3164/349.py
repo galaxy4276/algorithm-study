@@ -6,3 +6,9 @@ class Solution(object):
             return set1.intersection(set2)
         else:
             return set2.intersection(set1)
+
+## 1st retry
+class Solution(object):
+    def intersection(self, nums1, nums2):
+        return list(set(nums1) & set(nums2))
+
