@@ -7,6 +7,6 @@ int removeElement(int* nums, int numsSize, int val){
             nums[index++] = nums[i];
         }
     }
-    return index;
+    return index; 
 }
    
