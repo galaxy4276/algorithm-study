@@ -9,7 +9,7 @@ void duplicateZeros(int* arr, int arrSize) {
             for (j = arrSize - 1; j > i; j--) {
                 arr[j] = arr[j - 1];
             }
-            i++;
+            i++; 
         }
     }
     return arr;
