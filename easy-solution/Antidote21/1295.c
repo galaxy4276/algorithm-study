@@ -23,7 +23,7 @@ int findNumbers(int* nums, int numsSize) {
 			cnt++;
 		}
 	}
-	return cnt;
+	return cnt; 
 }
 
 
