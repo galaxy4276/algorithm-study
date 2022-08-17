@@ -10,3 +10,4 @@ bool validMountainArray(int* arr, int arrSize){
         i++;
     return i == arrSize-1;
 }
+ 
