@@ -1,16 +1,12 @@
-length = int(input())
-values = []
+from sys import stdin
 
-for i in range(0, length) :
-  values.append(input())
-
-for i in range(0, length) :
+for _ in range(int(input())) :
   count = 0
-  for j in values[i] :
-    if j == "(" :
+  for char in stdin.readline() :
+    if char == "(" :
       count += 1
     
-    elif j == ")" :
+    elif char == ")" :
       count -= 1
 
       if count < 0 :
@@ -22,3 +18,29 @@ for i in range(0, length) :
   
   elif count > 0 :
     print("NO")
+
+
+# retry
+
+from sys import stdin
+
+for _ in range(int(stdin.readline())) :
+  isValid = True
+  stack = []
+  
+  for char in stdin.readline().strip() :
+    if char == "(" :
+      stack.append(char)
+
+    else :
+      if stack:
+        stack.pop()
+      
+      else :
+        isValid = False
+        break
+
+  if stack:
+    isValid = False
+
+  print("YES" if isValid else "NO")
