@@ -2,3 +2,6 @@
 *.exe
 *.pdb
 target
+
+# python ignore
+tempCodeRunnerFile.py
