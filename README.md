@@ -1,9 +1,11 @@
 ## Member Info
 
-| name                                        | email                  | status          |
-| ------------------------------------------- | ---------------------- | --------------- |
-| [galaxy4276](https://github.com/galaxy4276) | galaxyhi4276@gmail.com | 군인( 1년차 )   |
-| [minesp3164](https://github.com/minesp3164) | unknown                | 대학생( 2학년 ) |
+| name                                          | email                  | status            |
+| --------------------------------------------- | ---------------------- | ----------------- |
+| [galaxy4276](https://github.com/galaxy4276)   | galaxyhi4276@gmail.com | 군인( 1년차(진) ) |
+| [minesp3164](https://github.com/minesp3164)   | lhd000721@gmail.com    | 대학생( 2학년 )   |
+| [Antidote21](https://github.com/Antidote21)   | istming525@naver.com   | 대학생( 2학년 )   |
+| [pandora2948](https://github.com/pandora2948) | pandora2948@naver.com  | 대학생( 2학년 )   |
 
 ## Goals
 
@@ -22,7 +24,14 @@
   - Java, Python skill up
   - learning cs (computer science)
   - ready to code test
-  - 나 살아났어 비오
+* Antidote21
+  - C, Java skill up
+  - learning cs (computer science)
+  - ready to code test
+* pandora2948
+  - python skill up
+  - learn algorithm & data structure
+  - ready to entrance exam
 
 ## How to proceed?
 
