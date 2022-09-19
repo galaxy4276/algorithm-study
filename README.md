@@ -6,7 +6,7 @@
 | [minesp3164](https://github.com/minesp3164)      | lhd000721@gmail.com    | 대학생( 2학년 )   |
 | [Antidote21](https://github.com/Antidote21)      | istming525@naver.com   | 대학생( 2학년 )   |
 | [pandora2948](https://github.com/pandora2948)    | pandora2948@naver.com  | 대학생( 2학년 )   |
-| [ckstn7301](https://github.com/ckstn7301)        | ckstn7301@naver.com    | 대학생( 2학년 )   |
+| [ckstn7301](https://github.com/ChanSuy)        | ckstn7301@naver.com    | 대학생( 2학년 )   |
 | [bear-bear-bear](https://github.com/bear-bear-bear) | ghlwkdthfl@gmail.com   | 직장인( 1년차 )   |
 
 ## Goals
