@@ -38,7 +38,10 @@
   - rust study
   - learn algorithm & data structure
   - learn compile language
-
+* ckstn7301
+  - python skill up
+  - learn algorithm & data structure
+  - ready to algorithm test
 ## How to proceed?
 
 - (임시) 매 주말마다 풀이 진행 후 서로 간 코드 리뷰
