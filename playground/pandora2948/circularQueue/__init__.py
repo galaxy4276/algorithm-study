@@ -23,7 +23,7 @@ class CircularQueue:
     def Front(self) -> int:
         if self.isEmpty():
             return -1
-        return self.data[(self.front + self.MAX_SIZE - 1) % self.MAX_SIZE]
+        return self.data[self.front]
     def Rear(self) -> int:
         if self.isEmpty():
             return -1
