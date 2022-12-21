@@ -5,3 +5,7 @@ target
 
 # python ignore
 tempCodeRunnerFile.py
+test.py
+
+#idea ignore
+.idea
